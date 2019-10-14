@@ -4,4 +4,5 @@ sudo apt-get update
 sudo apt-get install python-dev python-setuptools python-mysqldb python-pip
 sudo apt-get update && sudo apt-get upgrade -y 
 wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
+usermod -aG sudo frappe
 python install.py --production --user frappe
