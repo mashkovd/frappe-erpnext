@@ -1,8 +1,9 @@
 #!/bin/bash
-sudo apt-get update
 
-sudo apt-get install python-dev python-setuptools python-mysqldb python-pip
-sudo apt-get update && sudo apt-get upgrade -y 
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install python3-setuptools python3-minimal redis-server build-essential -y
+
+sudo usermod -aG sudo frappe
+
 wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
-usermod -aG sudo frappe
-python install.py --production --user frappe
+sudo python3 install.py --production --user frappe --mysql-root-password frappe --admin-password frappe
