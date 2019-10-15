@@ -3,6 +3,7 @@
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install python3-setuptools python3-minimal redis-server build-essential -y
 
+adduser frappe
 sudo usermod -aG sudo frappe
 
 wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
