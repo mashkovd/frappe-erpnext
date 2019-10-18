@@ -15,3 +15,4 @@ sudo python3 install.py --production --user frappe --mysql-root-password frappe 
 
 https://discuss.erpnext.com/t/stuck-on-building-frappe-assets/45379
 https://discuss.erpnext.com/t/error-cannot-find-module-chalk/44851
+https://github.com/addyosmani/a11y/issues/13
