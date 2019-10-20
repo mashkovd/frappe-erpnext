@@ -11,7 +11,10 @@ chmod o+rx /home/frappe
 wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
 sudo python3 install.py --production --user frappe --mysql-root-password frappe --admin-password frappe
 
-
+sudo npm install -g yarn
+bench update --requirements
+bench setup socketio
+bench build
 
 https://discuss.erpnext.com/t/stuck-on-building-frappe-assets/45379
 https://discuss.erpnext.com/t/error-cannot-find-module-chalk/44851
