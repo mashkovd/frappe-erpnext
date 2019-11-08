@@ -6,7 +6,10 @@ sudo apt-get install -y git build-essential python3-setuptools python3-dev libff
 
 adduser frappe
 sudo usermod -aG sudo frappe
+
 chmod o+rx /home/frappe
+sudo chown -R mashkovd /var/www
+
 wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
 sudo python3 install.py --production --user frappe --mysql-root-password frappe --admin-password frappe
 
